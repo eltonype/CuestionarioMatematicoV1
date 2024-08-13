@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6e75d6;
+    margin: 0;
+    overflow: hidden;
+}
+
+#game-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    max-height: 90vh; 
+    overflow-y: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+#start-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#student-name {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+#student-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#student-info p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#question {
+    font-size: 18px;
+    margin-bottom: 15px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-btn {
+    display: block;
+    background-color: #51c5c9;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    animation: fadeInOption 0.7s ease-in-out;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+@keyframes fadeInOption {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.option-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#timer {
+    font-size: 18px;
+    margin-top: 15px;
+    animation: fadeInTimer 0.5s ease-in-out;
+}
+
+@keyframes fadeInTimer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
